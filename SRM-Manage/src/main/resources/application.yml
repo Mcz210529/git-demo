@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    druid:
+      url: jdbc:mysql://47.120.25.122:3306/ry-vue
+      username: ry-vue
+      password: mcz210529
+      driver-class-name: com.mysql.cj.jdbc.Driver
+  data:
+    redis:
+      host: 47.120.25.122
+      port: 6379
+      password: mcz210529
+      database: 1
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*.xml
+  type-aliases-package: com.mcz.pojo
+  configuration:
+    map-underscore-to-camel-case: true
+sky:
+  alioss:
+    endpoint: oss-cn-beijing.aliyuncs.com
+    access-key-id: LTAI5tBSUu6aqpKBkVNWejcE
+    access-key-secret: pnhamekWOc1cgaPQjvZmEYw2jkJeuE
+    bucket-name: sky-take-out0529
+logging:
+  level:
+    com: debug
